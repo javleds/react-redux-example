@@ -133,3 +133,16 @@ const MyComponent = () => {
 
 export default MyComponent
 ```
+
+
+## Run the example project
+- Clone the repository.
+- Move to the directory.
+- Install the dependencies.
+  ```bash
+  npm i
+  ```
+- Run the start script.
+  ```bash
+  npm run start
+  ```
