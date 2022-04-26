@@ -4,7 +4,7 @@
 ![before_redux](./assets/before_redux.png)
 
 ## App component tree with redux
-![after_redux](./assets/after_redux.png)
+![after_redux](./assets/_after_redux.png)
 
 ## Create a slice using `js`
 
