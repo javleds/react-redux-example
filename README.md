@@ -100,6 +100,20 @@ interface InitialState {
     assignmentId: number|null
 }
 ```
+- Define the payload typein your createSlice.reducer definition:
+```ts    
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+
+const assignmentSlice = createSlice({
+    /*...*/
+    reducers: {
+        show: (state, action: PayloadAction<number>) => {
+            state.showActions = true
+            state.assignmentId = context.payload
+        }
+    }
+})
+```
 - When you export your store, ensure to define the root state type, it can be easily done by inferring it 
 ```ts
     const store = configureStore({/*...*/})
