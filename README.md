@@ -21,13 +21,13 @@
     ```
 3. Define the name, initialState and reducers from the slice.
     ```js
-    import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+    import { createSlice } from '@reduxjs/toolkit'
    
     const assignmentSlice = createSlice({
         name: 'assignmentTable',
         initialState,
         reducers: {
-            show: (state, context) => {
+            show: (state, action) => {
                 state.showActions = true
                 state.assignmentId = context.payload
             },
